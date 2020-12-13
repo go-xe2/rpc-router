@@ -1,0 +1,47 @@
+# 路由服务配置
+
+options:
+  # http监听地址
+  httpAddr: ':3003'
+  # 路由服务监听地址
+  routerAddr: ':3004'
+  # 是否启用rpc服务
+  enableRpcServer: true
+  # rpc远程调用服务监听地址
+  rpcAddr: ':3001'
+
+  # 协议存放目录
+  pdlPath: './pdl'
+  # 提供服务的服务器地址列表存放目录
+  hostPath: './hosts'
+  # 路由根路径
+  baseRouter: '/v1'
+  # 根命名空间
+  baseNamespace: 'com.mnyun.'
+  # 是否监听host文件目录变动
+  watchHostChanged: true
+  # 是否监听协议目录文件变动
+  watchPDLChanged: true
+  # 服务器地址存储文件后掇
+  hostExt: '.host'
+  # 协议文件后掇
+  pdlExt: '.pdl'
+  # 向服务器发送数据超时时间(秒)
+  writeTimeout: 2
+  # 从服务器读取数据超时时间(秒)
+  readTimeout: 2
+  # 连接服务器超时时间(秒)
+  connectTimeout: 2
+  # 连接池中空闲服务连接保持时间(秒)
+  clientPoolKeepAlive: 120 # 2 * 60
+  # 连接失败的服务器重试连接时间间隔(秒)
+  connectFailRetry: 120 #2 * 60
+  # 与服务器连接的心跳频率
+  heartbeat: 300
+  # 允许丢失的最大心跳次数
+  AllowMaxLoss: 3
+  # 数据接收队列大小
+  recvBufSize: 1024
+  # 数据发送队列大小
+  sendBufSize: 1024
+
